@@ -1,47 +1,62 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>타이틀</title>
+        <title>메뉴</title>
         <style>
-            ul{
-                list-style-type:none;
-            }       
-            ul li{
-                
-                float: left;
-                border: 1px solid #bcbcbc;            
-                padding: 10px;
-                background-color:black;
-                color: white;
-                
-                
+
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+            body, html, ul, li {
+                font-family: 'Noto Sans KR', sans-serif;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            body > ul {
+                margin-top: 20px;
+                width: 800px;
+                list-style-type: none;
             }
 
-        
+            ul > li {
+                margin: 0px 2px;
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                float: left;
+                background-color: black;
+                text-align: center;
+                color: white;
+                font-size: 16px;
+            }
+
+            ul > li:hover > ul {
+                display: block;
+            }
+
+            ul > li > ul {
+                display: none;
+            }
+
+            ul > li > ul > li {
+                background-color: gray;
+            }
+            
         </style>
     </head>
     <body>
-        <ul id='box1'>
+        <ul>
             <li>홈으로</li>
-             
-        </ul>
-           
-        <ul>
             <li>내소개</li>
-        </ul>
-
-        <ul>
+            <li>포트폴리오 ▽
+                <ul>
+                    <li>하위메뉴1</li>
+                    <li>하위메뉴2</li>
+                    <li>하위메뉴3</li>
+                    <li>하위메뉴4</li>
+                </ul>
+            </li>
             <li>프로젝트</li>
-        </ul>
-
-        <ul>
-            <li>포트폴리오</li>
-        </ul>
-
-        <ul>
             <li>GITHUB</li>
         </ul>
-
     </body>
-
 </html>

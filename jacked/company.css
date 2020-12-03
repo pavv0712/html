@@ -1,0 +1,35 @@
+body{
+    margin: 0px; 
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+
+}
+a{
+text-decoration: none;
+color: white;
+}
+
+#page{
+    height:100px;
+    width: 1500px;
+    background-color: grey;
+    color: white;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+#menu ul li{
+    color: rgb(83, 74, 74);
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
+
+
+
+
